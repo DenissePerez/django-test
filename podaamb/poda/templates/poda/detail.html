@@ -1,0 +1,18 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Solicitud</title>
+</head>
+<body>
+<h1>{{ solicitud.nombre }}</h1>
+<h3>{{ solicitud.id_solicitud }} {{ solicitud.nombre }}</h3>
+
+<ul>
+    {% for solicitud in coordinador.solicitud_set.all %}
+        <li>{{ solicitud.id_solicitud }} - {{ solicitud.nombre }}</li>
+    {% endfor %}
+</ul>
+</body>
+</html>

@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Solicitud</title>
+</head>
+<body>
+<h3>
+    Solicitudes:
+</h3>
+
+<ul>
+    {% for solicitud in solicitudes %}
+    <li><a href="/poda/{{ solicitud.id_solicitud }}/"> {{ solicitud.id_solicitud }} - {{ solicitud.nombre }}</a> </li>
+    {% endfor %}
+</ul>
+</body>
+</html>
